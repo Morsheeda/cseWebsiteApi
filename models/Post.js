@@ -18,9 +18,45 @@ const PostSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
+    author:{
+        type:String,
+        required:true,
+    },
+    authorRoll:{
+        type:String,
+        default:""
+    },
+    authorPhoto:{
+        type:String,
+        default:""
+    },
+    authorBatch:{
+        type:String,
+        default:""
+    },
+    authorDepartment:{
+        type:String,
+        default:""
+    },
+    authorEmail:{
+        type:String,
+        required:true,
+    },
+    authorFbLink:{
+        type:String,
+        default:""
+    },
+    authorTwitterLink:{
+        type:String,
+        default:""
+    },
+    authorLinkedinLink:{
+        type:String,
+        default:""
+    },
     categories:{
         type:Array,
-        required:false,
+        default:""
     }
 },
 {timestamps:true}

@@ -6,21 +6,6 @@ const UserSchema = new mongoose.Schema({
         required:true,
         unique:false
     },
-    department:{
-        type:String,
-        required:true,
-        unique:false
-    },
-    batch:{
-        type:String,
-        required:true,
-        unique:false
-    },
-    roll:{
-        type:String,
-        required:true,
-        unique:true
-    },
     username:{
         type:String,
         required:true,
@@ -36,6 +21,30 @@ const UserSchema = new mongoose.Schema({
         required:true
     },
     profilePic:{
+        type:String,
+        default:""
+    },
+    department:{
+        type:String,
+        default:""
+    },
+    batch:{
+        type:String,
+        default:""
+    },
+    roll:{
+        type:String,
+        default:""
+    },
+    fbLink:{
+        type:String,
+        default:""
+    },
+    twitterLink:{
+        type:String,
+        default:""
+    },
+    linkedinLink:{
         type:String,
         default:""
     },

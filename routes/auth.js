@@ -11,12 +11,12 @@ router.post("/register", async (req,res)=>{
         const hashedPass = await bcrypt.hash(req.body.password,salt)
         const newUser = new User({
             name: req.body.name,
-            department: req.body.department,
-            batch: req.body.batch,
-            roll: req.body.roll,
             username: req.body.username,
             email: req.body.email,
             password: hashedPass,
+            // department: req.body.department,
+            // batch: req.body.batch,
+            roll: req.body.roll,
             profilePic: req.body.profilePic,
             
         })
